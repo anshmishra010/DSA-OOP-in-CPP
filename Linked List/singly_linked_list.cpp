@@ -2,7 +2,6 @@
 using namespace std;
 
 class Node
-
 {
 	public:
 		
@@ -38,7 +37,6 @@ class sll
 			head=n;
 		}
 		
-		
 		Node* nexist(int k) //k= key value
 		{
 			Node *temp=NULL;
@@ -54,8 +52,6 @@ class sll
 			}
 			return temp;
 		}
-		
-		
 		
 		Node *appendnode(Node *n) //n= new node 
 		{
@@ -83,7 +79,6 @@ class sll
 			}
 		}
 		
-		
 		void prependnode(Node *n)
 		{
 			if(nexist(n->key)!=NULL)
@@ -97,7 +92,6 @@ class sll
 				cout<<"Node prepended "<<endl;
 			}
 		}
-		
 		
 		void insertnode(int k,Node *n) 
 		{
@@ -120,7 +114,6 @@ class sll
 				}
 			}
 		}
-		
 		
 		void dnode(int k)
 		{
@@ -167,7 +160,6 @@ class sll
 			}
 		}
 		
-		
 		void updatenode(int k, int d)
 		{
 			Node *ptr=nexist(k);
@@ -181,7 +173,6 @@ class sll
 				cout<<"Node doesn't exist "<<k<<" value "<<endl;
 			}
 		}
-		
 		
 		void printlist()
 		{
