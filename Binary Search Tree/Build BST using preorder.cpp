@@ -17,6 +17,10 @@ struct Node{
 
 Node* bst( int preorder[] , int *idx , int key ,int min , int max  , int n)
 {
+    //idx is the next index pointer
+    // key is the data
+    // n is size 
+    // min and max are ranges
     if(*idx > n)
     {
         return NULL;
